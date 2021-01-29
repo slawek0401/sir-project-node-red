@@ -97,24 +97,3 @@ def bokehShow(data, devices):
         devicesPlots.append(devicePlots)
 
     show(gridplot(devicesPlots))
-
-
-
-
-
-
-    # # create a new plot (with a title) using figure
-    # p = figure(plot_width=400, plot_height=400, title="My Line Plot")
-    #
-    # # add a line renderer
-    # p.line([1, 2, 3, 4, 5], [6, 7, 2, 4, 5], line_width=2, line_color="orange", legend_label="asdasd")
-    # p.line([1, 2, 3, 4, 5], [7, 1, 3, 5, 4], line_width=2, legend_label="asdasd")
-    #
-    # e = figure(plot_width=400, plot_height=400, title="My Line Plot")
-    #
-    # # add a line renderer
-    # e.line([1, 2, 3, 4, 5], [6, 7, 2, 4, 5], line_width=2, line_color="orange", legend_label="asdasd")
-    # e.line([1, 2, 3, 4, 5], [7, 1, 3, 5, 4], line_width=2, legend_label="asdasd")
-    #
-    # show(row(column(p,e),column(p,e))) # show the results
-    #
