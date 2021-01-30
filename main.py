@@ -23,7 +23,7 @@ if __name__ == "__main__":
     client.deviceEventCallback = clientEventCallback
     eventsMid = client.subscribeToDeviceEvents("+", "+", "+")
 
-    while len(data["SIR_device01"]) < 31 and len(data["SIR_device02"]) < 31:
+    while len(data["SIR_device01"]) < 31 or len(data["SIR_device02"]) < 31:
         time.sleep(2)
     dataHandler.printData(data, devices)
     dataHandler.bokehShow(data, devices)

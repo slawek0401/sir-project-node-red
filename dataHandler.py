@@ -59,7 +59,7 @@ def getDataArray(data, device):
 def printDataSingleDevice(data, device):
     headers = ["timestamp", "temperature_inside", "temperature_outside", "humidity", "air_pressure"]
     print("device: "+device)
-    print(tabulate(getDataArray(data, "SIR_device01") + getStats(data, "SIR_device01"), headers=headers))
+    print(tabulate(getDataArray(data, device) + getStats(data, device), headers=headers))
     print("\n\n")
 
 
